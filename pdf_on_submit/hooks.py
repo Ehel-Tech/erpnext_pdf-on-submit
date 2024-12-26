@@ -81,7 +81,7 @@ app_license = "GPLv3"
 # Hook on document methods and events
 
 doc_events = {
-	"*": {"before_save": "pdf_on_submit.attach_pdf.attach_pdf"}
+	"*": {"on_update": "pdf_on_submit.attach_pdf.attach_pdf"}
 }
 
 # Scheduled Tasks
